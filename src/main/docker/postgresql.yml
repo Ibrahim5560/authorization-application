@@ -1,0 +1,11 @@
+version: '2'
+services:
+  authorizationapplication-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/AuthorizationApplication/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=AuthorizationApplication
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
